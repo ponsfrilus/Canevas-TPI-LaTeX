@@ -1,0 +1,30 @@
+% comment
+\documentclass[12pt,twoside,a4paper]{report}
+
+\usepackage[outputdir=./out]{minted}
+\usepackage{afterpage}
+\usepackage{bibtopic}
+\usepackage{blindtext}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{pgfgantt}
+\usepackage{xcolor}
+
+\bibliographystyle{alpha}
+
+\begin{document}
+  \include{0a_title_page}
+  \afterpage{\null\newpage}
+
+  \include{0b_bref_resumé}
+
+  \tableofcontents
+  \afterpage{\null\newpage}
+
+  \include{1_Analyse_préliminaire}
+  \include{2_Analyse_Conception}
+  \include{3_Réalisation}
+  \include{4_Conclusions}
+  \include{5_Annexes}
+\end{document}

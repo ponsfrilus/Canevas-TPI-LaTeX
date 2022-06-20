@@ -1,0 +1,30 @@
+\chapter{Analyse préliminaire}
+\section{Introduction}
+  \textit{Ce chapitre décrit brièvement le projet, le cadre dans lequel il est réalisé, les raisons de ce choix et ce qu'il peut apporter à l'élève ou à l'école. Il n'est pas nécessaire de rentrer dans les détails (ceux-ci seront abordés plus loin) mais cela doit être aussi clair et complet que possible (idées de solutions). Ce chapitre contient également l'inventaire et la description des travaux qui auraient déjà été effectués pour ce projet.}\\
+  \textit{Ces éléments peuvent être repris des spécifications de départ.}
+
+\section{Objectifs}
+  \textit{Ce chapitre énumère les objectifs du projet. L'atteinte ou non de ceux-ci devra pouvoir être contrôlée à la fin du projet. Les objectifs pourront éventuellement être revus après l'analyse.}\\
+  \textit{Ces éléments peuvent être repris des spécifications de départ.}
+
+\section{Planification initiale}
+  \textit{Ce chapitre montre la planification du projet. Celui-ci peut être découpé en tâches qui seront planifiées. Il s'agit de la première planification du projet, celle-ci devra être revue après l'analyse. Cette planification sera présentée sous la forme d'un diagramme.}\\
+  \textit{Ces éléments peuvent être repris des spécifications de départ.}
+
+\section{Gantt planification initiale}
+%
+% A simpler example from the package documentation:
+%
+\begin{ganttchart}{1}{22}
+  \gantttitle{2022}{12} \\
+    \ganttgroup{Analyse}{1}{6} \\
+    \ganttgroup{Conception}{7}{9} \\
+    \ganttgroup{Réalisation}{10}{11} \\ 
+    \ganttgroup{Finalisation}{11}{12} \\
+    \ganttbar{Task 1}{1}{2} \\
+    \ganttlinkedbar{Task 2}{3}{7} \ganttnewline
+    \ganttmilestone{Milestone}{7} \ganttnewline
+    \ganttbar{Final Task}{8}{12}
+    \ganttlink{elem2}{elem3}
+    \ganttlink{elem3}{elem4}
+\end{ganttchart}
