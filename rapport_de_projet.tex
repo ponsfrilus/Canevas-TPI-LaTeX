@@ -4,6 +4,19 @@
 \addtolength{\oddsidemargin}{1.5cm}
 \addtolength{\evensidemargin}{-1.5cm}
 
+
+\usepackage[french]{babel}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Kata-Manga}
+\fancyhead[RE,LO]{\itshape Candide Hatte}
+%\fancyfoot[CE,CO]{\thesection}
+\fancyfoot[LE,RO]{\thepage}
+
+
 \usepackage[outputdir=./out]{minted}
 \usepackage[svgnames]{xcolor}
 \usepackage{afterpage}
@@ -92,9 +105,9 @@
   \include{0b_quote}
   \afterpage{\null\newpage}
   \include{0c_bref_resumé}
-  \afterpage{\null\newpage}
+  %\afterpage{\null\newpage}
   \tableofcontents
-  \afterpage{\null\newpage}
+  %\afterpage{\null\newpage}
 
   \include{1_Analyse_préliminaire}
   \include{2_Analyse_Conception}
